@@ -1,7 +1,7 @@
 def greeting
-    ARGV.each { |x|
-        puts "Hey #{x}"
-    }
+  ARGV.each {|x|
+    puts "Hey #{x}"
+  }
 end
 
 greeting

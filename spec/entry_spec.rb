@@ -1,41 +1,43 @@
 require_relative '../models/entry'
- 
-RSpec.describe Entry do
- 
-  describe "Entry" do
-    let(:entry) { Entry.new('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com') }
 
-    it "has name attribute" do
+RSpec
+
+RSpec.describe Entry do
+
+  describe 'Entry' do
+    let(:entry) {Entry.new('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')}
+
+    it 'has name attribute' do
       expect(entry).to respond_to(:name)
     end
 
-    it "'s name attribute is set correctly" do
+    it '\'s name attribute is set correctly' do
       expect(entry.name).to eq('Ada Lovelace');
     end
 
-    it "has email attribute" do
+    it 'has email attribute' do
       expect(entry).to respond_to(:email)
     end
 
-    it "'s email attribute is set correctly" do
+    it '\'s email attribute is set correctly' do
       expect(entry.email).to eq('augusta.king@lovelace.com')
-    end 
+    end
 
-    it "has phone number attribute" do
+    it 'has phone number attribute' do
       expect(entry).to respond_to(:phone_number)
     end
 
-    it "'s phone number attribute is set correctly" do
+    it '\'s phone number attribute is set correctly' do
       expect(entry.phone_number).to eq('010.012.1815')
     end
   end
 
-  describe "#to_s" do
-    it "prints an entry as a string" do
+  describe '#to_s' do
+    it 'prints an entry as a string' do
       entry = Entry.new('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
       expected_string = "Name: Ada Lovelace\nPhone Number: 010.012.1815\nEmail: augusta.king@lovelace.com"
       expect(entry.to_s).to eq(expected_string)
     end
   end
 
- end
+end

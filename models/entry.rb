@@ -12,6 +12,7 @@ class Entry
   def to_s
     return "Name: #{@name}\nPhone Number: #{@phone_number}\nEmail: #{@email}"
   end
+
 =begin
   def name
     return @name
